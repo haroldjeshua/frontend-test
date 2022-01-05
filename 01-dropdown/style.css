@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #0A0A0A;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    }
+
+.wrapper {
+    position: relative;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 230px;
+    height: 80px;
+    padding: 0 30px;
+    border-radius: 10px;
+    background: #322d3a;
+    color: #f3f3f3;
+    z-index: 2;
+}
+
+.text {
+    font-size: 19px;
+}
+
+.icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    width: 3px;
+    height: 10px;
+    border-radius: 1px;
+    background: #fff;
+    transition: all .3s;
+}
+
+.icon::before {
+    transform: translate(-5px, 0) rotate(-45deg);
+}
+
+.icon::after {
+    transform: translate(0, 0) rotate(45deg);
+}
+
+input {
+    position: relative;
+    transform: scale(0);
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.menu ul {
+    width: 100%;
+    margin: 0;
+    padding: 48px 0 24px;
+    background: #1f1b25;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-100%);
+    list-style: none;
+    transition: all .3s;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    padding: 0 10px;
+}
+
+.menu li:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.menu li > a {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: 44px;
+    padding: 0 24px;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #f7f7f7;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.menu li > a:hover {
+    background: #312b3a;
+}
+
+input:checked ~ .menu ul {
+    transform: translateY(0);
+}
+
+input:checked ~ .button {
+    background: #4461fd;
+}
+
+input:checked ~ .button .icon::before {
+    transform: 
+        translate(-3px, 0)
+        rotate(-45deg)
+        scaleY(2);
+}
+
+input:checked ~ .button .icon::after {
+    transform: 
+        translate(-3px, 0)
+        rotate(45deg)
+        scaleY(2);
+}
