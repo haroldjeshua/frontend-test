@@ -125,9 +125,9 @@
 			}
 		};
 
-	let numPages = function () {
-		return Math.ceil(objJson.length / records_per_page);
-	};
+		let numPages = function () {
+			return Math.ceil(objJson.length / records_per_page);
+		};
   }
   let pagination = new Pagination();
   pagination.init();
