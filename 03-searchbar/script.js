@@ -12,7 +12,6 @@ searchInput.addEventListener('input', e => {
         user.email.toLowerCase().includes(value)
         user.element.classList.toggle('hide', !isVisible)
     })
-    console.log(value)
 }) 
 
 fetch('https://jsonplaceholder.typicode.com/users')
