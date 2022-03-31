@@ -10,7 +10,7 @@ const getData = () => {
 const sendData = () => {
     axios.post('https://reqres.in/api/register', {
         email: 'eve.holt@reqres.in',
-        // password: 'pistol'
+        password: 'pistol'
     }).then(response => {
         console.log(response)
     })
