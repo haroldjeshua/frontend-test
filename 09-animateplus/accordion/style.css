@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    font: 500 .9em/2 -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2E2C33;
+    background: #FBFBFD;
+  }
+  
+  #accordion {
+    position: relative;
+    width: 370px;
+    list-style: none;
+  }
+  
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px;
+    border: none;
+    outline: none;
+    font: inherit;
+    font-weight: 600;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(188, 193, 217, .12), 0 5px 12px rgba(188, 193, 217, .25);
+    color: #0ec5c7;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  div {
+    position: absolute;
+    margin-top: -7px;
+    padding: 8px 10px;
+    opacity: 0;
+    transform-origin: 0 0;
+  }
+  
+  button, div {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  div, object {
+    pointer-events: none;
+  }
+  
+  object {
+    width: 10px;
+    height: 7px;
+  }
+  
+  .open {
+    pointer-events: auto;
+  }
+  
+  #accordion ul {
+    list-style: disc inside;
+  }

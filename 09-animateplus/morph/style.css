@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    background: #FBFBFD;
+  }
+  
+  span {
+    --size: 200px;
+    width: var(--size);
+    height: var(--size);
+    background: #616AFF;
+    clip-path: polygon(
+      50% 20%,
+      80% 20%,
+      80% 50%,
+      80% 80%,
+      65% 80%,
+      50% 80%,
+      35% 80%,
+      20% 80%,
+      20% 50%,
+      20% 20%
+    );
+  }
