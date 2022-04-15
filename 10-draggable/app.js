@@ -3,11 +3,6 @@ const sortable = new Draggable.Sortable(document.querySelector(".drag-list"), {
   mirror: {
 	constrainDimensions: true,
   },
-//   plugins: [Plugins.SortAnimation],
-//   swapAnimation: {
-// 	duration: 200,
-// 	easingFunction: 'ease-in-out',
-//   },
 });
 
 sortable.on('sortable:start', () => {
