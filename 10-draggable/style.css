@@ -27,10 +27,10 @@ main {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	width: 256px;
 }
 
 .drag-list__item {
+	width: 256px;
 	display: flex;
     flex-direction: row;
 	justify-content: space-between;
@@ -38,9 +38,14 @@ main {
 	gap: 1rem;
 	padding: 1rem;
 	border: 5px solid black;
+	transition: .3s;
 }
 
 .draggable-source--is-dragging {
 	visibility: hidden;
-	transition: .2s;
+	transition: .3s;
+}
+
+.draggable-mirror {
+	transition: none;
 }
