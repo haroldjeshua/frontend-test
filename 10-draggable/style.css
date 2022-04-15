@@ -37,9 +37,10 @@ main {
 	align-items: center;
 	gap: 1rem;
 	padding: 1rem;
-	border: 2px solid black;
+	border: 5px solid black;
 }
 
-.drag-list__item:not(:first-child) {
-	border-top: none;
+.draggable-source--is-dragging {
+	visibility: hidden;
+	transition: .2s;
 }
