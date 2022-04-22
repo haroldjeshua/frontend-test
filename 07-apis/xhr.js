@@ -26,19 +26,20 @@ const sendHttpRequest = (method, url, data) => {
 
         xhr.send(JSON.stringify(data));
     });
+
     return promise;
 }
 
 const getData = () => {
-    sendHttpRequest('GET', 'https://reqres.in/api/users').then(responseData => {
+    sendHttpRequest('GET', 'https://reqres.in/api/usersasddsad').then(responseData => {
         console.log(responseData);
     });
 };
 
 const sendData = () => {
     sendHttpRequest('POST', 'https://reqres.in/api/register', {
-        email: 'eve.holt@reqres.in',
-        password: 'pistol'
+        email: 'eve.holt@reqres.ins',
+        // password: 'pistol'
     })
         .then(responseData => {
         console.log(responseData);
