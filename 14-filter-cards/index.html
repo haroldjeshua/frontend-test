@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>14 - Filter Cards</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+	<style>
+		.active {
+  			border-bottom: 2px solid;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+			data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#">My Projects</a>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" data-filter="all" href="#">All</a>
+				<a class="nav-item nav-link" data-filter="dev" href="#">Development</a>
+				<a class="nav-item nav-link" data-filter="art" href="#">Art</a>
+				<a class="nav-item nav-link" data-filter="dnd" href="#">D&D</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 project dev">
+				<div class="card">
+					<div class="card-block">
+						<h3 class="card-title">Dev Project</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 project art">
+				<div class="card">
+					<div class="card-block">
+						<h3 class="card-title">Art Project</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 project dev">
+				<div class="card">
+					<div class="card-block">
+						<h3 class="card-title">Dev Project</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 project dnd">
+				<div class="card">
+					<div class="card-block">
+						<h3 class="card-title">D&D Project</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 project dev">
+				<div class="card">
+					<div class="card-block">
+						<h3 class="card-title">Dev Project</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 project art">
+				<div class="card">
+					<div class="card-block">
+						<h3 class="card-title">Art Project</h3>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
