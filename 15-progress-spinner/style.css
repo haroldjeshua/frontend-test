@@ -49,6 +49,12 @@ body {
 	outline: inherit;
 }
 
+.number {
+	display: flex;
+    align-items: center;
+    height: 110px;
+}
+
 .circle {
 	stroke-dasharray: 410;
 	stroke-dashoffset: 410;
